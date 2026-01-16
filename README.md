@@ -1,6 +1,6 @@
 # MONOPOLY
 
-주루마블 간단하게 만들어봤는데 최대 팀 4팀으로 구성 돼 있음
+[링크](https://MONOPOLY.index.html)
 
 # 주류마블 (6x6 외곽 보드)
 
