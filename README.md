@@ -1,6 +1,6 @@
 # MONOPOLY
 
-[링크](https://MONOPOLY.index.html)
+[링크](https://jh3779.github.io/MONOPOLY/index.html)
 
 # 주류마블 (6x6 외곽 보드)
 
