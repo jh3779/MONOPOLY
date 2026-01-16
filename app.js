@@ -13,27 +13,125 @@ const BOARD_SIZE = gridMapping.length;
 const BONUS_COLOR = '#fde047';
 
 const tileData = [
-  { name: '출발지', color: '#fca5a5', isBonus: false, content: '쉬어가세용' },
-  { name: '면제권', color: BONUS_COLOR, isBonus: true },
-  { name: '술 한잔해', color: '#fcd34d', isBonus: false, content: '한잔해~' },
-  { name: '너 마셔!', color: '#86efac', isBonus: false, content: '지목대상 마시기' },
-  { name: '모두다 마셔!', color: '#93c5fd', isBonus: false, content: '다같이 한잔해~' },
-  { name: '뒤로 1칸이동', color: '#c4b5fd', isBonus: false, content: 'Move back 1 tile', effect: { type: 'MOVE', steps: -1 } },
-  { name: '면제권', color: BONUS_COLOR, isBonus: true },
-  { name: '남자끼리 마셔', color: '#fdba74', isBonus: false },
-  { name: '양옆 마셔', color: '#fcd34d', isBonus: false, content: '너 너 마셔!' },
-  { name: '술 적립하기', color: '#86efac', isBonus: false, content: '술 하나 적립이요~' },
-  { name: '뒤로 2칸이동', color: '#93c5fd', isBonus: false, content: 'Move back 2 tiles', effect: { type: 'MOVE', steps: -2 } },
-  { name: '대신술 권', color: BONUS_COLOR, isBonus: true, content: '술 마실때 자신의 술 남에게 먹이기' },
-  { name: '눈치게임', color: '#fca5a5', isBonus: false, content: '눈치게임 시작!' },
-  { name: '한글날', color: '#fdba74', isBonus: false, content: '다음차례까지 영어금지' },
-  { name: '물 한잔해', color: '#fcd34d', isBonus: false, content: '물 한잔해~' },
-  { name: 'PASS', color: '#86efac', isBonus: false, content: '야호 페스~' },
-  { name: '면제권', color: BONUS_COLOR, isBonus: true },
-  { name: '여자끼리 마셔', color: '#c4b5fd', isBonus: false },
-  { name: 'PASS', color: '#fca5a5', isBonus: false, content: '나도 패스~' },
-  { name: '적립 술 마시기', color: '#fdba74', isBonus: false, content: '적립된 술을 마셔보아요' }
+  {
+    name: '출발지',
+    color: '#fca5a5',
+    isBonus: false,
+    content: '쉬어가세용'
+  },
+  {
+    name: '면제권',
+    color: BONUS_COLOR,
+    isBonus: true
+  },
+  {
+    name: '술 한잔해',
+    color: '#fcd34d',
+    isBonus: false,
+    content: '한잔해~'
+  },
+  {
+    name: '너 마셔!',
+    color: '#86efac',
+    isBonus: false,
+    content: '지목대상 마시기'
+  },
+  {
+    name: '모두다 마셔!',
+    color: '#93c5fd',
+    isBonus: false,
+    content: '다같이 한잔해~'
+  },
+  {
+    name: '뒤로 1칸이동',
+    color: '#c4b5fd',
+    isBonus: false,
+    content: 'Move back 1 tile',
+    effect: { type: 'MOVE', steps: -1 }
+  },
+  {
+    name: '면제권',
+    color: BONUS_COLOR,
+    isBonus: true
+  },
+  {
+    name: '남자끼리 마셔',
+    color: '#fdba74',
+    isBonus: false
+  },
+  {
+    name: '양옆 마셔',
+    color: '#fcd34d',
+    isBonus: false,
+    content: '너 너 마셔!'
+  },
+  {
+    name: '술 적립하기',
+    color: '#86efac',
+    isBonus: false,
+    content: '술 하나 적립이요~'
+  },
+  {
+    name: '뒤로 2칸이동',
+    color: '#93c5fd',
+    isBonus: false,
+    content: 'Move back 2 tiles',
+    effect: { type: 'MOVE', steps: -2 }
+  },
+  {
+    name: '대신술 권',
+    color: BONUS_COLOR,
+    isBonus: true,
+    content: '술 마실때 자신의 술 남에게 먹이기'
+  },
+  {
+    name: '눈치게임',
+    color: '#fca5a5',
+    isBonus: false,
+    content: '눈치게임 시작!'
+  },
+  {
+    name: '한글날',
+    color: '#fdba74',
+    isBonus: false,
+    content: '다음차례까지 영어금지'
+  },
+  {
+    name: '물 한잔해',
+    color: '#fcd34d',
+    isBonus: false,
+    content: '물 한잔해~'
+  },
+  {
+    name: 'PASS',
+    color: '#86efac',
+    isBonus: false,
+    content: '야호 페스~'
+  },
+  {
+    name: '면제권',
+    color: BONUS_COLOR,
+    isBonus: true
+  },
+  {
+    name: '여자끼리 마셔',
+    color: '#c4b5fd',
+    isBonus: false
+  },
+  {
+    name: 'PASS',
+    color: '#fca5a5',
+    isBonus: false,
+    content: '나도 패스~'
+  },
+  {
+    name: '적립 술 마시기',
+    color: '#fdba74',
+    isBonus: false,
+    content: '적립된 술을 마셔보아요'
+  }
 ];
+
 
 const tileImages = [
   '', // 01
@@ -393,3 +491,4 @@ document.addEventListener('DOMContentLoaded', () => {
     render();
   }
 });
+
