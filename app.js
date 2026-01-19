@@ -25,10 +25,10 @@ const tileData = [
     isBonus: true
   },
   {
-    name: '술 한잔',
+    name: '의리게임!',
     color: '#fcd34d',
     isBonus: false,
-    content: '한잔해~'
+    content: '팀끼리 나눠 마셔보아요~'
   },
   {
     name: '너 마셔!',
