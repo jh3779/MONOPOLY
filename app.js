@@ -25,7 +25,7 @@ const tileData = [
     isBonus: true
   },
   {
-    name: '술 한잔해',
+    name: '술 한잔',
     color: '#fcd34d',
     isBonus: false,
     content: '한잔해~'
@@ -94,7 +94,7 @@ const tileData = [
     name: '한글날',
     color: '#fdba74',
     isBonus: false,
-    content: '다음차례까지 영어금지'
+    content: '다음차례까지 한국어만'
   },
   {
     name: '물 한잔해',
@@ -103,10 +103,10 @@ const tileData = [
     content: '물 한잔해~'
   },
   {
-    name: 'PASS',
+    name: '야 막내야!',
     color: '#86efac',
     isBonus: false,
-    content: '야호 페스~'
+    content: '다음 차례까지 막내입니다~'
   },
   {
     name: '면제권',
@@ -119,10 +119,10 @@ const tileData = [
     isBonus: false
   },
   {
-    name: 'PASS',
+    name: '안주먹기',
     color: '#fca5a5',
     isBonus: false,
-    content: '나도 패스~'
+    content: '안주 한입해'
   },
   {
     name: '적립 술 마시기',
